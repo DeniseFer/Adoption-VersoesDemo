@@ -69,12 +69,13 @@ h3{
     margin-top:40px;
 }
 
-#img-gatinho{
+#img-cachorro{
+    
     height:500px;
     border-radius: 2px;
 }
 
-#img-gatinho, .dicas {
+#img-cachorro, .dicas {
     display: flex;
     flex-direction: column;
     width: calc(100% - 400px); /* Largura igual à largura da tela menos 320px (160px de margem à esquerda e 160px de margem à direita) */
@@ -139,6 +140,28 @@ h4{
     margin-top:40px;
     margin-left:60px;   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
