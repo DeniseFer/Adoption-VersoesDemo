@@ -37,7 +37,7 @@ body{
     align-items: center;
     position:absolute;
     right: 20px; 
-    margin-top: -93px;;
+    margin-top: -93px;
 }
 
 li{
@@ -224,7 +224,12 @@ h1{
     margin-left: 60px;    
 }
 
-h3{
+h3 {
+    font-family: "Outfit", sans-serif;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 40px;
     padding: 20px;
 }
 
