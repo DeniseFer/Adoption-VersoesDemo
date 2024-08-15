@@ -20,6 +20,8 @@ body{
     background-color: #FFC6BF;
     position:relative;
     height:120px;
+    display: flex;
+    flex-direction: row;
 }
 
 #img-logo{
@@ -37,7 +39,9 @@ body{
     align-items: center;
     position:absolute;
     right: 20px; 
-    margin-top: -93px;
+    margin-top:-20px;
+    display: flex;
+    flex-direction: row;
 }
 
 li{
@@ -207,7 +211,7 @@ h1{
     text-align: center; /* Centraliza o texto */
 }
 
-.footer{
+footer{
     height:524px;
     background-color: #000000;
     font-family: "Outfit", sans-serif;
