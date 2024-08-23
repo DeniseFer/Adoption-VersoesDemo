@@ -1,28 +1,200 @@
-.ad{
-	padding-top: 100px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 3000px;
+	
+
+    
 }
 
-* { 
-	margin: 0; 
-	padding: 0; 
 
-	font-family: 'arial' 
-} 
+/* Dropdown Menu */
+.dropdown {
+    position: relative; /* Garante que o conteúdo do dropdown seja posicionado em relação ao pai */
+	
 
-body { 
-	display: flex; 
-	align-items: center; 
-	justify-content: center; 
-	min-height: 100vh; 
-	padding: 0 35px; 
-	background-color: #afb2bb;
-} 
+}
 
-.wrapper { 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+	transform: translateX(-0,5%); /* Centraliza o dropdown horizontalmente */
+    background-color: #fff;
+    max-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+
+
+
+}
+
+.dropdown-content li {
+    width: 100%;
+
+}
+
+
+
+
+.dropdown-content a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+	padding: 12px 0; /* Ajuste do padding para centralizar o conteúdo verticalmente */
+	text-align: center; /* Centraliza o texto horizontalmente */
+	padding-right: 100px;
+	
+	
+}
+
+.dropdown-content a:hover {
+    
+    color: #D4A45B;
+	padding-right: 100px;
+	
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nome{
+	color: #D4A45B;
+	font-family: Montserrat;
+	font-style: bold;
+}
+
+.fundo-site{
+	background-color: #FBECB7;
+}
+
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+
+/* --Imagem Fundo */
+
+#fundo1{
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    
+    width: 100%;
+	height: 100vh;
+    
+    
+}
+
+/* --Estilo Menu */
+
+header{
+    font-family: Montserrat;
+    font-weight: 600;
+    padding: 40px 4%;
+    color: #fcfcfc;
+    font-size: 20px;
+    margin-right: 40px;
+    
+
+    
+}
+
+.container{
+ 
+    max-width: 1280px;
+    margin: 0 auto;
+   
+
+}
+
+
+
+
+header > .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color: #fefcfc;
+    text-decoration-line: none ;
+}
+
+a:hover{
+    color: rgb(0, 0, 0);
+    transition: 0.3s all;
+}
+
+
+/* --Estilo Hero */
+
+#titulo-hero{
+    line-height: 65px;
+    color: #fcfcfc;
+    margin-right: 60px;
+}
+
+h1{
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 70px;
+   
+    
+}
+
+h1 .cor{
+    color: #D4A45B;
+}
+
+#subtitulo{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 30px;
+}
+
+main{
+    text-align: center;
+    margin-top: 170px;
+
+}
+
+
+
+/*  CARROSSEL  */
+
+
+
+
+
+.wrapper, .wrapper2 { 
 	max-width: 1100px; 
 	width: 100%; 
 	position: relative; 
 	padding-top: 100px; 
+    margin: 0 auto; /* Centraliza o carrossel horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza o carrossel verticalmente dentro da section */
+
 	  
 
 } 
@@ -30,7 +202,7 @@ body {
 .wrapper i { 
 	height: 50px; 
 	width: 50px; 
-	background: #FF7373; 
+	background: #D4A45B; 
 	text-align: center; 
 	line-height: 50px; 
 	border-radius: 50%; 
@@ -90,7 +262,7 @@ body {
 
 .carousel .card { 
 	scroll-snap-align: start; 
-	height: 340px; 
+	height: 300px; 
 	list-style: none; 
 	background: #fff; 
 	border-radius: 8px; 
@@ -101,11 +273,25 @@ body {
 	align-items: center; 
 	justify-content: center; 
 	flex-direction: column; 
+	justify-content: flex-start;
 } 
+
+
+
+.card .img, .card2 .img2 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Esconde qualquer parte da imagem que ultrapasse os limites */
+    border-radius: 8px;
+}
+
+
+
 
 .card {
 	width: 500px; 
 	height: 500px;
+	
   }
   
 
@@ -113,7 +299,9 @@ body {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	border-radius: 8px; 
+	border-radius: 8px;
+	
+
   }
   
   .card h2 {
@@ -134,53 +322,36 @@ body {
 
 } 
 
-.ad{
+
+/*ANUNCIO*/
+
+.ad {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    margin: 20px auto; /* Garante que a div .ad esteja centralizada na página */
+    padding: 20px; /* Opcional: Adiciona espaçamento interno */
 	padding-top: 100px;
+	
 }
 
-#risco {
+.ad img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho da tela */
+    height: auto; /* Mantém a proporção da imagem */
+	
+}
+
+
+/* Carrossel 2 */
+
+.titulos {
 	text-align: center; 
-	color: #A74438; 
+	color: #D4A45B; 
 	padding-top: 60px;
 	font-size: 30px; 
+    font-family: Montserrat;
+    font-weight: 800;
   }
-  
-  
-
-@media screen and (max-width: 900px) { 
-	.wrapper .carousel { 
-		grid-auto-columns: calc((100% / 2) - 9px); 
-
-	} 
-} 
-
-@media screen and (max-width: 600px) { 
-	.wrapper .carousel { 
-		grid-auto-columns: 100%; 
-
-	} 
-}
-
-
-.img-container {
-
-	justify-content: center;
-	align-items: center;
-	height: 1000px;
-	width: 1000px;
-	padding-bottom: 100px;
-	padding-right: 100px;
-	padding-left: 100px;
-}
-
-
-* { 
-	margin: 0; 
-	padding: 0; 
-	box-sizing: border-box; 
-	font-family: 'arial' 
-} 
-
 
 
 .wrapper2 { 
@@ -195,7 +366,7 @@ body {
 .wrapper2 i { 
 	height: 50px; 
 	width: 50px; 
-	background: #FF7373; 
+	background: #FBECB7;
 	text-align: center; 
 	line-height: 50px; 
 	border-radius: 50%; 
@@ -255,7 +426,7 @@ body {
 
 .carousel2 .card2 { 
 	scroll-snap-align: start; 
-	height: 340px; 
+	height: 300px; 
 	list-style: none; 
 	background: #fff; 
 	border-radius: 8px; 
@@ -266,6 +437,7 @@ body {
 	align-items: center; 
 	justify-content: center; 
 	flex-direction: column; 
+	justify-content: flex-start;
 } 
 
 .card2 {
@@ -275,6 +447,7 @@ body {
   
 
 .card2 .img2 img {
+	
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -299,28 +472,71 @@ body {
 
 } 
 
-.footer {
-    width: 100%;
-	position: absolute;
-    background-color: #cc4141; 
-    color: white;
-    padding: 20px;
-    margin-top: 560px; 
 
+/* Footer  */
+
+footer{
+    height:524px;
+    background-color: #000000;
+    font-family: "Outfit", sans-serif;
+	margin-top: 100px;
+	width:100vw;
 }
 
-.infos {
+.informacoes{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 0 100px;
+}
+
+.infos{
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
+    flex-direction: column;
+    color:white; 
+    margin-top: 60px; 
+    margin-left: 60px;    
 }
 
-.linha-fina {
-    border-top: 1px solid white;
-    margin: 35px 40px 0 40px;
+#if-1 {
+    margin-left: 0; 
 }
 
-.rights {
+
+#if-3 {
+    margin-right: 10px;
+}
+
+h3 {
+    font-family: "Outfit", sans-serif;
+    font-size: 40px;
+    font-weight: normal;
     text-align: center;
     margin-top: 40px;
+    padding: 20px;
 }
+
+.infos p{
+    padding: 20px;
+    font-weight: normal;
+    margin-left: 0;
+	font-size:23px;
+}
+
+.linha-fina{
+    border-top: 1px solid white;
+    margin-top: 35px; 
+    margin-left:40px; 
+    margin-right:40px; 
+}
+
+.rights{
+    color:white; 
+    margin-top:40px;
+    margin-left:60px;   
+}
+
+ 
+
+
