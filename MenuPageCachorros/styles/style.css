@@ -13,6 +13,69 @@
 
 
 
+/* Dropdown Menu */
+.dropdown {
+    position: relative; /* Garante que o conteúdo do dropdown seja posicionado em relação ao pai */
+	
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+	transform: translateX(-0,5%); /* Centraliza o dropdown horizontalmente */
+    background-color: #fff;
+    max-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+
+
+
+}
+
+.dropdown-content li {
+    width: 100%;
+
+}
+
+
+
+
+.dropdown-content a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+	padding: 12px 0; /* Ajuste do padding para centralizar o conteúdo verticalmente */
+	text-align: center; /* Centraliza o texto horizontalmente */
+	padding-right: 100px;
+	
+	
+}
+
+.dropdown-content a:hover {
+    
+    color: #D4A45B;
+	padding-right: 100px;
+	
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
+
+
 
 .fundo-site{
 	background-color: antiquewhite;
