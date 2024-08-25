@@ -69,12 +69,11 @@
     display: block;
 }
 
-
-
-
-
-
-
+.nome{
+	color: #FF7373;
+	font-family: Montserrat;
+	font-style: bold;
+}
 
 
 .fundo-site{
@@ -128,7 +127,6 @@ header{
 
 
 
-
 header > .container{
     display: flex;
     align-items: center;
@@ -175,7 +173,7 @@ h1 .cor{
     font-family: Montserrat;
     font-weight: 400;
     font-style: italic;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 main{
