@@ -432,7 +432,13 @@ section.noticias{
    
 }
 
+.card-noticia a{
+    color: #000000;
+}
 
+.card-noticia a:hover{
+    color: #ffffff;
+}
 
 
 
