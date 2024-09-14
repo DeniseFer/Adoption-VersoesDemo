@@ -41,6 +41,8 @@ body{
 .dropdown-content li {
     width: 100%;
 
+    
+
 }
 
 
@@ -54,8 +56,12 @@ body{
     font-weight: normal;
 	padding: 12px 0; /* Ajuste do padding para centralizar o conteúdo verticalmente */
 	text-align: center; /* Centraliza o texto horizontalmente */
-	padding-right: 100px;
-	
+	padding-right: 70px;
+    letter-spacing: 0px;
+    margin-top:0 px;
+    align-items:center;
+    
+  
 	
 }
 
@@ -111,6 +117,7 @@ header > .container{
 li{
     display: inline-block;
     margin: 20px;
+
 }
 
 a{
