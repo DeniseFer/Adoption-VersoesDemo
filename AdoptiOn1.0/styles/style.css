@@ -5,7 +5,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    max-width: 1550px;
+    
     
     
 }
@@ -232,7 +232,7 @@ section.sobre .flex{
     font-family: Montserrat;
 
     margin-top: 30px;
-    margin-left: 60px;
+    margin-left: 0px;
     
 }
 
@@ -244,6 +244,7 @@ section.sobre .flex{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
 
     
     
@@ -291,15 +292,15 @@ section.sobre .flex{
 
 .card_image img{
     width: 100%;
+    overflow: hidden;
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho da tela */
     height: 100%;
 }
 
 
 .card_content{
     
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+text-align: center;
 }
 
 .card_title{
@@ -336,7 +337,7 @@ section.sobre .flex{
     background-color:#D4A45B ;
     color: #000000;
     font-size: 1rem;
-    text-transform: lowercase;
+    text-transform: uppercase;
     font-weight: 600;
     border: none;
     padding: .5em;
@@ -386,4 +387,54 @@ section.sobre .flex{
     background-color: rgb(0, 0, 0);
     color:#388B9D;
     transition: 0.3s all;
+}
+
+
+/* CARD */
+
+
+
+.card-noticia{
+    font-family: Montserrat;
+    font-size: 10px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFB7D9;
+    padding: 32px 16px;
+}
+
+
+.noticias-div{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+
+.cards-noticia{ /*main.cards*/
+
+    
+    padding: 32px;
+
+}
+
+
+
+.icon{
+    width: 64px;
+    height: 64px;
+}
+
+.card-noticia img{
+width: 100%;
+   
 }
