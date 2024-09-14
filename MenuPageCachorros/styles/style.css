@@ -336,6 +336,7 @@ main{
     align-items: center; /* Centraliza o conteúdo verticalmente */
     margin: 20px auto; /* Garante que a div .ad esteja centralizada na página */
     padding: 20px; /* Opcional: Adiciona espaçamento interno */
+	padding-top: 100px;
 }
 
 .ad img {
