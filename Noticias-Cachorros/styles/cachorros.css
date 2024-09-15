@@ -13,6 +13,8 @@ body{
     background-color: #F0ECEC;   
 }
 
+
+/* Dropdown Menu */
 .dropdown {
     position: relative; /* Garante que o conteúdo do dropdown seja posicionado em relação ao pai */
 	
@@ -38,6 +40,8 @@ body{
 .dropdown-content li {
     width: 100%;
 
+    
+
 }
 
 
@@ -51,8 +55,12 @@ body{
     font-weight: normal;
 	padding: 12px 0; /* Ajuste do padding para centralizar o conteúdo verticalmente */
 	text-align: center; /* Centraliza o texto horizontalmente */
-	padding-right: 100px;
-	
+	padding-right: 70px;
+    letter-spacing: 0px;
+    margin-top:0 px;
+    align-items:center;
+    
+  
 	
 }
 

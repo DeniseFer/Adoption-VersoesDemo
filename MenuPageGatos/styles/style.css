@@ -13,12 +13,13 @@
 }
 
 
+
 /* Dropdown Menu */
 .dropdown {
     position: relative; /* Garante que o conteúdo do dropdown seja posicionado em relação ao pai */
 	
-
 }
+
 
 .dropdown-content {
     display: none;
@@ -31,6 +32,7 @@
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 5px;
+    padding-left:10px;
 
 
 
@@ -38,6 +40,8 @@
 
 .dropdown-content li {
     width: 100%;
+
+    
 
 }
 
@@ -52,9 +56,11 @@
     font-weight: normal;
 	padding: 12px 0; /* Ajuste do padding para centralizar o conteúdo verticalmente */
 	text-align: center; /* Centraliza o texto horizontalmente */
-	padding-right: 100px;
-	
-	
+	padding-right: 70px;
+    letter-spacing: 0px;
+    margin-top:0 px;
+    align-items:center;
+
 }
 
 .dropdown-content a:hover {
