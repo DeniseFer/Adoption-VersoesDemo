@@ -9,10 +9,7 @@
 	<script src="/MenuPageCachorros/script/script.js" defer></script> 
     
 	<link rel="stylesheet" href= 
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-
-
-<link rel="icon" href="/AdoptiOn1.0/images/paw.png">
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" /> 
 
 <link rel="stylesheet" href="/Carregamento/styles-carregamento/carregamento.css"> <!--CSS CARREGAMENTO-->
 
@@ -85,6 +82,75 @@
 
         <h2 id="risco">CATÁLOGO</h2>
 
+
+
+<!-- Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-body">
+            <div class="modal-left">
+                <div class="dog-info">
+                    <img id="dog-image" src="" alt="Imagem do cachorro">
+                    <p id="dog-description">Descrição do cachorro</p>
+                    <p id="dog-history">História do cachorro</p>
+                </div>
+            </div>
+            
+            <div class="modal-right">
+                <div class="modal-header">
+                    <h2 id="dog-name"></h2>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="skills">
+                    <div class="skill">
+                        <label for="carinho">Carinho:</label>
+                        <progress id="carinho" value="80" max="100"></progress>
+                    </div>
+                    <div class="skill">
+                        <label for="energia">Energia:</label>
+                        <progress id="energia" value="90" max="100"></progress>
+                    </div>
+                    <div class="skill">
+                        <label for="sociabilidade">Sociabilidade:</label>
+                        <progress id="sociabilidade" value="70" max="100"></progress>
+                    </div>
+                </div>
+                <div class="sobre-mim">
+                    <div id="sobre-mim">
+                        <p>SOBRE<br>MIM!</p>
+                    </div>
+                    <div class="news">
+                        <table>
+                            <tr>
+                                <td id="header-news">Sexo:</td>
+                                <td id="dog-gender"></td>
+                            </tr>
+                            <tr>
+                                <td id="header-news">Contato:</td>
+                                <td id="dog-contact"></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td id="header-news">Idade:</td>
+                                <td id="dog-age"></td>
+                            </tr>
+                            <tr>
+                                <td id="header-news">Local:</td>
+                                <td id="dog-location"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ 
+
+
+
         <section class="carroselCentro"> 
 
         <div class="wrapper" > 
@@ -100,7 +166,7 @@
                 </li> 
                 <li class="card"> 
                     <div class="img"><img src= 
-                        "/MenuPageCachorros/images/ZÉQUINHA.png"
+                        "/MenuPageCachorros/images/ZEQUINHA.png"
                                         alt="" draggable="false"> </div> 
                     <h2 class="nome">
                         Zequinha</h2> 
